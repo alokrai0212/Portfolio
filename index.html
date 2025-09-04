@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alok Kumar Rai - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #0e1c2f;
+      color: white;
+    }
+
+    aside {
+      width: 250px;
+      background-color: #1c2b40;
+      padding: 20px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    aside img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #3b82f6;
+    }
+
+    aside h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    aside p {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #aab;
+    }
+
+    aside nav {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    aside nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      background-color: #3b82f6;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    aside nav a:hover {
+      background-color: #2563eb;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h1, h2 {
+      color: #3b82f6;
+      margin-bottom: 20px;
+    }
+
+    .project, .skill, .contact-link {
+      background: #1f2a44;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .skills .skill {
+      flex: 1 1 100px;
+      text-align: center;
+    }
+
+    .contact-link a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      aside nav {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      aside img {
+        width: 80px;
+        margin-bottom: 0;
+        margin-right: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <aside>
+    <img src="C:\Users\raial\OneDrive\Desktop" alt="Alok Kumar Rai">
+    <h2>Alok Kumar Rai</h2>
+    <p>Python | ML | Web Dev | SQL | Excel</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>Hello! I'm Alok Kumar Rai, a passionate and curious individual driven by a love for technology and continuous learning. I specialize in Python programming, machine learning, web development (HTML/CSS), SQL, and Excel analytics. I enjoy solving real-world problems using smart and scalable solutions, especially in the fields of data science and intelligent systems.</p>
+      <p>My projects often combine creativity and functionality — from building machine learning models to designing clean and responsive web interfaces. I'm currently focused on expanding my skills in full-stack development and AI integration, including projects like my personal assistant Nooba, which merges voice commands, smart automation, and AI-driven responses.</p>
+      <p>I'm always open to new challenges and believe in learning by doing. Whether working independently or as part of a team, I bring a growth mindset, attention to detail, and strong communication skills.</p>
+      <p>When I’m not coding, I enjoy exploring new tech trends, improving my problem-solving abilities, and contributing to open-source projects. I’m actively building my portfolio and always excited to connect, collaborate, and contribute to meaningful innovations.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Task Tracker</h3>
+        <p>A simple task tracking app built with HTML, CSS, and JavaScript for easy task management. <a href="https://github.com/alokrai0212" target="_blank">View on GitHub</a></p>
+      </div>
+      <div class="project">
+        <h3>Churn Analysis</h3>
+        <p>A churn prediction model built using machine learning to predict customer churn. <a href="https://github.com/alokrai0212" target="_blank">View on GitHub</a></p>
+      </div>
+      <div class="project">
+        <h3>Sales Data Visualization</h3>
+        <p>Excel dashboard created to visualize and analyze sales data. <a href="https://github.com/alokrai0212" target="_blank">View on GitHub</a></p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Excel</div>
+        <div class="skill">SQL</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-link">
+        <p><a href="mailto:raialok625@gmail.com">📧 Email</a></p>
+        <p><a href="https://www.linkedin.com/in/alok-kumar-rai-5225532aa/" target="_blank">🔗 LinkedIn</a></p>
+        <p><a href="https://github.com/alokrai0212" target="_blank">💻 GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
